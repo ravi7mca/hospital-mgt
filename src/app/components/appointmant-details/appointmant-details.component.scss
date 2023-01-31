@@ -1,0 +1,48 @@
+  #appointment {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    margin-top: 1px;
+  }
+  
+  #appointment td, #appointment th {
+    border: 1px solid #ddd;
+    padding: 2px;
+  }
+  
+  #appointment tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #appointment tr:hover {background-color: #ddd;}
+  
+  #appointment th {
+    padding-top: 5px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(10, 49, 128);
+    color: white;
+  }
+  .mat-form-field {
+    font-size: 12px; // example
+    height: 50px;
+}
+//   ::ng-deep .mat-datepicker-content .mat-calendar{
+//     width: 100px !important;
+//     height: 1000px !important;
+// }
+  // .appointment {
+  //   background: #f4f4f4;
+  //   margin: 1px;
+  //   padding: 1px 2px;
+  //   cursor: pointer;
+  // }
+  
+  // .appointment.reminder {
+  //   border-left: 5px solid green;
+  // }
+  
+  // .appointment h3 {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: space-between;
+  // }

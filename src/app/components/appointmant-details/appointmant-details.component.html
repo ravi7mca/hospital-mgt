@@ -1,0 +1,60 @@
+<div style="text-align: center;margin-bottom: 1px;">
+    <span style="color:black;font-weight:bold;text-align: center;">Appointments Details</span>
+</div>
+<div style="width: 40px;margin-left:115px; margin-top: 15px;">
+        <tr>
+            <th><mat-form-field [style.width.px]=200 appearance="fill">
+                <mat-label>From Date</mat-label>
+                <input  name="fromdate" matInput [matDatepicker]="picker" [(ngModel)]="fromDate">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field></th>
+            <th style="padding: 5px;"><mat-form-field [style.width.px]=200 appearance="fill">
+                <mat-label>To Date</mat-label>
+                <input  name="todate" matInput [matDatepicker]="picker1" [(ngModel)]="toDate">
+                <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                <mat-datepicker #picker1></mat-datepicker>
+            </mat-form-field></th>
+            <th>
+                <button style="width: 100px;height: 35px;" (click)="searchAppointmentDetails()">Search</button>
+            </th>
+          </tr>
+</div>
+    <table id="appointment">
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Mobile Number</th>
+          <th>Date & Time</th>
+        </tr>
+        <tr *ngFor="let appointment of appointmentsDetails">
+          <td>{{appointment.name}}</td>
+          <td>{{ appointment.age }}</td>
+          <td>{{ appointment.gender }}</td>
+          <td>{{ appointment.mobileNumber }}</td>
+          <td>
+            <p>{{ appointment.appointmentDate }} 
+                <span>at {{ appointment.appointmentTime }}</span>
+            </p>
+          </td>
+        </tr>
+     </table>
+<!--<div class="appointment">
+    <p>
+        <span style="color:blue;font-weight:bold">Name: </span>{{ appointment.name }}
+    </p>
+    <p>
+        <span style="color:blue;font-weight:bold">Age: </span>{{ appointment.age }}
+    </p>
+    <p>
+        <span style="color:blue;font-weight:bold">Gender: </span>{{ appointment.gender }}
+    </p>
+    <p>
+        <span style="color:blue;font-weight:bold">Mobile Number: </span>{{ appointment.mobileNumber }}
+    </p>
+    <p>
+        <span style="color:blue;font-weight:bold">Date & Time:</span> {{ appointment.appointmentDate }} 
+        <span>at {{ appointment.appointmentTime }}</span>
+    </p>
+</div>-->

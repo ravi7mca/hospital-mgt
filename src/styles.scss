@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+.add-form {
+  margin-bottom: 40px;
+  border: 2mm;
+}
+
+.form-control {
+    margin: 10px 0;
+  }
+  
+  .form-control label {
+    display: block;
+  }
+  
+  .form-control input {
+    width: 80%;
+    height: 35%;
+    margin: 5px;
+    padding: 3px 7px;
+    font-size: 17px;
+  }
+  .form-control select {
+    width: 83%;
+    height: 35%;
+    margin: 5px;
+    padding: 3px 7px;
+    font-size: 17px;
+  }
+
+  .btn-block {
+    width: 30%;
+    margin-left: 30%;
+  }

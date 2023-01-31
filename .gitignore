@@ -44,3 +44,11 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+/.vs/VSWorkspaceState.json
+/.vs/slnx.sqlite
+/.vs/ProjectSettings.json
+/.vs/hospital-mgt4/v17/.suo
+/.vs/hospital-mgt4/FileContentIndex/read.lock
+/.vs/hospital-mgt4/FileContentIndex/804e79cf-7cdc-42dc-9871-de6a52ba87be.vsidx
+/.vs/hospital-mgt4/FileContentIndex/677a65b7-2cdd-41e7-a1c9-88aafb3fac22.vsidx
+*.vsidx
